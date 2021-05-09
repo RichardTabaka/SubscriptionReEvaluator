@@ -1,0 +1,30 @@
+﻿<Window x:Class="SubReEvaluator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SubReEvaluator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        Background="#89B0AE"
+        >
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="Foreground" Value="#555B6E" />
+            
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="5" />
+        </Style>
+    </Window.Resources>
+    <Border CornerRadius="25"  Margin="25" Background="#BEE3DB">
+        <StackPanel Name="SP">
+            <Label FontSize="20" Margin="10">Subscription Re-Evaluator</Label>
+            <Separator Margin="10, 0, 0, 10"/>
+            <Label></Label>
+            <Label FontSize="16" HorizontalAlignment="Center">
+                Your current subscriptions:
+            </Label>
+        </StackPanel>
+    </Border>
+</Window>
