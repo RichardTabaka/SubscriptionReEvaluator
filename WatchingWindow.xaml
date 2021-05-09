@@ -5,8 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SubReEvaluator"
         mc:Ignorable="d"
-        Title="WatchingWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="Watching" Height="450" Width="800"
+        Background="#89B0AE">
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="Foreground" Value="#555B6E" />
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#89B0AE" />
+            <Setter Property="Width" Value="150" />
+            <Setter Property="FontSize" Value="10" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="Height" Value="17" />
+        </Style>
+
+    </Window.Resources>
+    <Border CornerRadius="25"  Margin="25" Background="#BEE3DB">
+        <StackPanel Name="WatchingSP">
+            <Label FontSize="20" Margin="10">Watching</Label>
+            <Separator Margin="10, 0, 0, 10"/>
+            <Label HorizontalAlignment="Center">This window is used to add time to a Subscription while you are using it instead of manually adding with the Edit window</Label>
+            <Label Margin="0,0,0,15" FontSize="16" HorizontalAlignment="Center">
+                Select a Subscription:
+            </Label>
+            <Label HorizontalAlignment="Center">What are you watching?</Label>
+            <ComboBox SelectionChanged="WatchingSubNameCB_SelectionChanged" Background="#89B0AE" Name="WatchingSubNameCB" SelectedIndex="0" Width="125"></ComboBox>
+            <Label HorizontalAlignment="Center">Current Total Subscription Time:</Label>
+            <Label Name="TimeLabel" HorizontalAlignment="Center">0</Label>
+            <Button Name="Start" Click="Start_Click">Start Watching</Button>
+            <Button Name="Pause" Click="Pause_Click">Pause</Button>
+            <Button Name="Stop" Click="Stop_Click">Stop Watching</Button>
+            <Button Name="ReturnButton" Click="ReturnButton_Click">Return to Menu</Button>
+        </StackPanel>
+    </Border>
 </Window>

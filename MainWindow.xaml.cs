@@ -38,6 +38,10 @@ namespace SubReEvaluator
                 //SubAdder = new Label() { Content = $"Cost: {sub.Cost} Time Spent Using: {sub.Time}", FontSize = 16, HorizontalAlignment = HorizontalAlignment.Center };
                 //SP.Children.Add(SubAdder);
             }
+            Button watchingButton = new Button() { Name = "WatchingButton", Content = "Watch Something", FontSize = 14, Width = 150, Height = 20 };
+
+            watchingButton.Click += new RoutedEventHandler(BtnClick4);
+            SP.Children.Add(watchingButton);
 
             Button addSubButton = new Button() { Name = "AddSubButton", Content = "Add a Subscription", FontSize = 14, Width = 150, Height = 20 };
             
@@ -54,6 +58,13 @@ namespace SubReEvaluator
             viewValuesButton.Click += new RoutedEventHandler(BtnClick3);
             SP.Children.Add(viewValuesButton);
 
+        }
+
+        private void BtnClick4(object sender, RoutedEventArgs e)
+        {
+            WatchingWindow ww = new WatchingWindow();
+            ww.Show();
+            this.Close();
         }
 
         private void BtnClick3(object sender, RoutedEventArgs e)
