@@ -23,7 +23,7 @@
     <Border CornerRadius="25"  Margin="25" Background="#BEE3DB">
         <StackPanel Name="WatchingSP">
             <Label FontSize="20" Margin="10">Watching</Label>
-            <Separator Margin="10, 0, 0, 10"/>
+            <Separator Margin="10, 0, 10, 10"/>
             <Label HorizontalAlignment="Center">This window is used to add time to a Subscription while you are using it instead of manually adding with the Edit window</Label>
             <Label Margin="0,0,0,15" FontSize="16" HorizontalAlignment="Center">
                 Select a Subscription:

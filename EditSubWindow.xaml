@@ -17,7 +17,7 @@
     <Border CornerRadius="25"  Margin="25" Background="#BEE3DB">
         <StackPanel Name="EditSubSP">
             <Label FontSize="20" Margin="10">Subscription Re-Evaluator</Label>
-            <Separator Margin="10, 0, 0, 10"/>
+            <Separator Margin="10, 0, 10, 10"/>
             <Label></Label>
             <Label Margin="0,0,0,15" FontSize="16" HorizontalAlignment="Center">
                 Edit a Subscription:
